@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".StudentPersonalDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:paddingVertical="40dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:hint="Enter Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:hint="Enter age"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="#FF3D00"
+        android:gravity="center"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+</FrameLayout>
