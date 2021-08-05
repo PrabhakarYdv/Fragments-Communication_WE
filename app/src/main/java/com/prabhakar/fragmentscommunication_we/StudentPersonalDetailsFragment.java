@@ -69,7 +69,8 @@ public class StudentPersonalDetailsFragment extends Fragment {
     }
 
     private boolean emptyFormHandler() {
-        if (studentName.getText() != null && studentAge.getText() != null) {
+//        if (studentName.getText().equals("")  && studentAge.getText().equals("")){
+        if (!studentName.getText().toString().isEmpty() && !studentAge.getText().toString().isEmpty()) {
             return true;
         } else {
             new AlertDialog.Builder(getContext()).setTitle("Error").setMessage("Please Enter both Details")
